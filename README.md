@@ -11,10 +11,10 @@ Gamer_1 walks, chooses a card or an object, which he will use in this turn and a
 Player_2 does the same. 
 The team that loses is the one that is left without combat-ready cards (all are dead).
 ## Build
-
+-
 ## Build and run test
-
+-
 ## Run
-
+-
 ## Run test
-
+-
