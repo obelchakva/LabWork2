@@ -1,9 +1,10 @@
-name: C++ CI with Makefile and Google Test
+name: ci tests
 
 on:
   push:
     branches:
       - main
+      - proj
   pull_request:
     branches:
       - main
@@ -25,4 +26,4 @@ jobs:
         run: make
 
       - name: Run tests
-        run: ./test-game
+        run: ./tests
