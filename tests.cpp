@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "game.cpp"
+#include "game.hpp"
 
 // Проверка корректной инициализации Pehota
 TEST(CharacterTest, PehotaInitialization) {
