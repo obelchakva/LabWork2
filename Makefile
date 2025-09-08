@@ -1,9 +1,9 @@
 CXX = g++
-CXXFLAGS = -Wall -Wextra -std=c++17
+CXXFLAGS = -Wall -Wextra -Werror -Wpedantic -std=c++17
 GTEST_LIBS = -lgtest -lgtest_main -pthread
 
-SRC_MAIN = main.cpp
-SRC_TESTS = tests.cpp
+SRC_MAIN = main.cpp game.cpp 
+SRC_TESTS = tests.cpp game.cpp
 OBJ_MAIN = $(SRC_MAIN:.cpp=.o)
 OBJ_TESTS = $(SRC_TESTS:.cpp=.o)
 
