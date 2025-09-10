@@ -1,3 +1,6 @@
+/* Obel'chak Vyacheslav st129564@student.spbu.ru
+ * LabWork2 */
+
 #include "game.hpp"
 
 using namespace std;
@@ -40,12 +43,12 @@ void Pehota::attack(Person&a, Person&b) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Pehota::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
 	}
 }
-
 
 Vor::Vor()
 {
@@ -93,17 +96,28 @@ void Vor::attack(Person& a) {
 		}
 	}
 }
+
 void Vor::attack(Person&a, Person&b) {
 	if (a.distance == b.distance) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Vor::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
 	}
 }
 
+Berserk::Berserk()
+{
+	attack_distance = 1;
+	damage = 5;
+	health = 6;
+	distance = 1;
+	fraction = "Воин";
+	name = "Берсерк";
+}
 
 void Berserk::attack(Person& a) {
 	if (a.fraction == "Иллюзионист") {
@@ -133,10 +147,21 @@ void Berserk::attack(Person&a, Person&b) {
 		cout << "Сюрприз!" << endl;
 	}	
 }
+
 void Berserk::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
 	}
+}
+
+Paladin::Paladin()
+{
+	attack_distance = 1;
+	damage = 4;
+	health = 11;
+	distance = 1;
+	fraction = "Воин";
+	name = "Паладин";
 }
 
 void Paladin::attack(Person& a) {
@@ -173,6 +198,16 @@ void Paladin::attack(Person&a, Person&b, Person&c) {
 	}
 }
 
+Celitel::Celitel()
+{
+	attack_distance = 2;
+	health = 10;
+	distance = 2;
+	fraction = "Маг";
+	heal = 2;
+	name = "Целитель";
+}
+
 void Celitel::attack(Person& a) {
 	if(a.health > 0) {
 		a.health += heal;
@@ -188,10 +223,21 @@ void Celitel::attack(Person&a, Person&b) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Celitel::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
 	}
+}
+
+Zaclinatel::Zaclinatel()
+{
+	attack_distance = 2;
+	health = 10;
+	distance = 2;
+	fraction = "Маг";
+	damage = 1;
+	name = "Заклинатель";
 }
 
 void Zaclinatel::attack(Person&a, Person&b) {
@@ -199,6 +245,7 @@ void Zaclinatel::attack(Person&a, Person&b) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Zaclinatel::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
@@ -242,11 +289,22 @@ void Zaclinatel::attack(Person& a) {
 	}
 }
 
+Arhimag::Arhimag()
+{
+	attack_distance = 2;
+	damage = 3;
+	health = 10;
+	distance = 2;
+	fraction = "Маг";
+	name = "Архимаг";
+}
+
 void Arhimag::attack(Person&a) {
 	if (a.distance == 564) {
 		cout << "Сюрприз" << endl;
 	}
 }
+
 void Arhimag::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
@@ -307,6 +365,16 @@ void Arhimag::attack(Person& a, Person& b) {
 	}
 }
 
+Illuzionist::Illuzionist()
+{
+	attack_distance = 2;
+	damage = 3;
+	health = 10;
+	distance = 2;
+	fraction = "Иллюзионист";
+	name = "Иллюзионист";
+}
+
 void Illuzionist::attack(Person &a) {
 	if (a.fraction != "Антимаг") {
 		if (a.fraction == "Иллюзионист") {
@@ -339,10 +407,21 @@ void Illuzionist::attack(Person&a, Person&b) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Illuzionist::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
 	}
+}
+
+Strelok::Strelok()
+{
+	attack_distance = 2;
+	damage = 3;
+	health = 10;
+	distance = 2;
+	fraction = "Лучник";
+	name = "Стрелок";
 }
 
 void Strelok::attack(Person&a, Person&b) {
@@ -350,11 +429,13 @@ void Strelok::attack(Person&a, Person&b) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Strelok::attack(Person&a) {
 	if (a.distance == 564) {
 		cout << "Сюрприз" << endl;
 	}
 }
+
 void Strelok::attack(Person &a, Person &b, Person &c) {
 	if (a.fraction == "Иллюзионист") {
 		if (a.distance <= attack_distance) {
@@ -420,11 +501,22 @@ void Strelok::attack(Person &a, Person &b, Person &c) {
 	}
 }
 
+Eger::Eger()
+{
+	attack_distance = 2;
+	damage = 3;
+	health = 10;
+	distance = 2;
+	fraction = "Лучник";
+	name = "Егерь";
+}
+
 void Eger::attack(Person&a, Person&b) {
 	if (a.distance == b.distance) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Eger::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
@@ -460,16 +552,28 @@ void Eger::attack(Person &a) {
 	}
 }
 
+Antimag::Antimag()
+{
+	attack_distance = 2;
+	damage = 3;
+	health = 10;
+	distance = 2;
+	fraction = "Антимаг";
+	name = "Антимаг";
+}
+
 void Antimag::attack(Person&a, Person&b) {
 	if (a.distance == b.distance) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Antimag::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Antimag::attack(Person &a) {
 	if (a.fraction == "Иллюзионист") {
 		if (a.distance <= attack_distance) {
@@ -494,11 +598,22 @@ void Antimag::attack(Person &a) {
 	}
 }
 
+Assasin::Assasin()
+{
+	attack_distance = 2;
+	damage = 3;
+	health = 10;
+	distance = 2;
+	fraction = "Лучник";
+	name = "Ассасин";
+}
+
 void Assasin::attack(Person&a, Person&b) {
 	if (a.distance == b.distance) {
 		cout << "Сюрприз!" << endl;
 	}
 }
+
 void Assasin::attack(Person&a, Person&b, Person&c) {
 	if (a.distance == b.distance && a.distance == c.distance) {
 		cout << "Сюрприз!" << endl;
@@ -543,6 +658,12 @@ void Assasin::attack(Person &a) {
 	}
 }
 
+Amulet::Amulet()
+{
+	fraction = "Предмет";
+	name = "Амулет";
+}
+
 void Amulet::use(Person &a) {
 	if(a.health > 0) {
 		a.health += 5;
@@ -554,14 +675,32 @@ void Amulet::use(Person &a) {
 	}
 }
 
+Yad::Yad()
+{
+	fraction = "Предмет";
+	name = "Яд";
+}
+
 void Yad::use(Person &a) {
 	a.health -= 4;
 	cout << "Вы уменьшили здоровье " << a.name << " на 4 единицы" << endl;
 }
 
+Eleksir::Eleksir()
+{
+	fraction = "Предмет";
+	name = "Эликсир";
+}
+
 void Eleksir::use(Person &a) {
 	a.damage +=1;
 	cout << "Вы повысили урон " << a.name << " на 1 единицу" << endl;
+}
+
+Proklyatie::Proklyatie()
+{
+	fraction = "Предмет";
+	name = "Проклятие";
 }
 
 void Proklyatie::use(Person &a) {
