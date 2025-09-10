@@ -1,0 +1,371 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:136.0) Gecko/20100101 Firefox/136.0" version="26.1.1">
+  <diagram name="Страница — 1" id="hPVP2RhHybijzR1Lpejw">
+    <mxGraphModel dx="1514" dy="819" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-1" value="&lt;div&gt;Person&lt;/div&gt;&lt;div&gt;(Родительский класс для классов игровых персонажей)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="120" width="360" height="300" as="geometry">
+            <mxRectangle x="220" y="220" width="320" height="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-20" value="Человек - основной класс, в котором заданы основные характеристики, которые присутствуют у всех наследуемых классов" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-1" vertex="1">
+          <mxGeometry y="50" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-2" value="health - переменная для хранения значения запаса здоровья" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-1" vertex="1">
+          <mxGeometry y="110" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-3" value="fraction - переменная для хранения данных о принадлежности класса одному из родительских классов (Воин, Маг, Лучник)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-1" vertex="1">
+          <mxGeometry y="150" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-4" value="attack() - функция для атаки противника" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-1" vertex="1">
+          <mxGeometry y="210" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-5" value="distance - переменная для хранения данных о положении персонажа на поле (два уровня расположения классов: ближний и дальний)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-1" vertex="1">
+          <mxGeometry y="240" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-6" value="&lt;div&gt;&amp;nbsp;Voin&lt;/div&gt;&lt;div&gt;(Наследник класса Person)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="500" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-21" value="&lt;div&gt;Воин - родительский класс для различных классов воинов. Боец ближнего боя.&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-6" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-7" value="damage - переменная для хранения значения урона" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-6" vertex="1">
+          <mxGeometry y="80" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-8" value="attack_distance - переменная для хранения значения дальности атаки" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-6" vertex="1">
+          <mxGeometry y="110" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-10" value="&lt;div&gt;Luchnik&lt;/div&gt;&lt;div&gt;(Наследник класса Person)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="500" width="360" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-22" value="&lt;div&gt;Лучник - родительский класс для различных классов лучников. Боец дальнего боя.&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-10" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-11" value="damage - переменная для хранения значения урона" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-10" vertex="1">
+          <mxGeometry y="80" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-12" value="attack_distance - переменная для хранения значения дальности атаки" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-10" vertex="1">
+          <mxGeometry y="110" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-13" value="&lt;div&gt;&amp;nbsp;Mag&lt;/div&gt;&lt;div&gt;(Наследник класса Person)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="500" width="360" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-23" value="Маг - родительский класс для различных классов магов. Боец дальнего боя." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-13" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-15" value="attack_distance - переменная для хранения значения дальности атаки" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-13" vertex="1">
+          <mxGeometry y="80" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-16" value="&lt;div&gt;Pehota&lt;/div&gt;&lt;div&gt;(Наследник класса Voin)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="690" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-17" value="Пехота - базовый боец со стандартными характеристиками. Не обладает особыми способностями." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-16" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-24" value="&lt;div&gt;Vor&lt;/div&gt;&lt;div&gt;(Наследник класса Voin)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="790" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-25" value="Вор - имеет стандартный показатель здоровья и пониженный показатель урона, обладает способностью снижать вражеский урон при атаке." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-24" vertex="1">
+          <mxGeometry y="40" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-26" value="&lt;div&gt;Berserk&lt;/div&gt;&lt;div&gt;(Наследник класса Voin)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="910" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-27" value="Берсерк - имеет сильно увеличенный показатель урона и пониженный показатель здоровья." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-26" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-28" value="&lt;div&gt;Paladin&lt;/div&gt;&lt;div&gt;(Наследник класса Voin)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="160" y="1010" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-29" value="Паладин - имеет увеличенные показатели здоровья и урона." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-28" vertex="1">
+          <mxGeometry y="40" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-30" value="&lt;div&gt;Celitel&lt;/div&gt;&lt;div&gt;(Наследник класса Mag)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="690" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-31" value="Целитель - имеет стандартный показатель здоровья, не наносит урон, обладает способностью лечить персонажей." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-30" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-34" value="&lt;div&gt;Zaklinatel&lt;/div&gt;&lt;div&gt;(Наследник класса Mag)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="790" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-35" value="Заклинатель - имеет стандартный показатель здоровья, не наносит урон, обладает способностью понижать урон врага." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-34" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-36" value="&lt;div&gt;Arhimag&lt;/div&gt;&lt;div&gt;(Наследник класса Mag)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="890" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-37" value="Архимаг - имеет стандартные показатели здоровья и урона,&amp;nbsp; атакует две цели одновременно." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-36" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-38" value="&lt;div&gt;Illuzionist&lt;/div&gt;&lt;div&gt;(Наследник класса Mag)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="990" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-39" value="Иллюзионист - имеет стандартные показатели здоровья и урона, с вероятностью 30% уклоняется от любой атаки противника." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-38" vertex="1">
+          <mxGeometry y="40" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-41" value="&lt;div&gt;Strelok&lt;/div&gt;&lt;div&gt;(Наследник класса Luchnik)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="690" width="360" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-42" value="Стрелок - имеет стандартные показатели здоровья и урона,&amp;nbsp; атакует три цели одновременно, нанося урон, сниженный в три раза." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-41" vertex="1">
+          <mxGeometry y="40" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-43" value="&lt;div&gt;Eger&lt;/div&gt;&lt;div&gt;(Наследник класса Luchnik)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="810" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-44" value="Егерь - имеет стандартные показатели здоровья и урона, наносит удвоенный урон по лучникам и магам." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-43" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-45" value="&lt;div&gt;Antimag&lt;/div&gt;&lt;div&gt;(Наследник класса Luchnik)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="910" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-46" value="Антимаг - имеет стандартные показатели здоровья и урона, не подвержен атакам магов." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-45" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-47" value="&lt;div&gt;Assasin&lt;/div&gt;&lt;div&gt;(Наследник класса Luchnik)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1120" y="1010" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-48" value="Ассасин - имеет стандартные показатели здоровья и урона, с вероятностью 10% убивает противника одной атакой." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="Wl4I8X28ZrfiVcVFsoqh-47" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-49" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-6" target="Wl4I8X28ZrfiVcVFsoqh-20" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="280" y="380" as="sourcePoint" />
+            <mxPoint x="550" y="220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="200" />
+              <mxPoint x="490" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-50" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;curved=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-10" target="Wl4I8X28ZrfiVcVFsoqh-5" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="710" y="580" as="sourcePoint" />
+            <mxPoint x="810" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-51" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;curved=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-13" target="Wl4I8X28ZrfiVcVFsoqh-20" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1150" y="310" as="sourcePoint" />
+            <mxPoint x="1250" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1300" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-52" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-16" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="110" y="730" as="sourcePoint" />
+            <mxPoint x="160" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="710" />
+              <mxPoint x="120" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-53" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-24" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="710" as="sourcePoint" />
+            <mxPoint x="160" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="815" />
+              <mxPoint x="120" y="710" />
+              <mxPoint x="120" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-54" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-26" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="710" as="sourcePoint" />
+            <mxPoint x="160" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="930" />
+              <mxPoint x="120" y="710" />
+              <mxPoint x="120" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-55" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-28" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="160" y="710" as="sourcePoint" />
+            <mxPoint x="160" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="1028" />
+              <mxPoint x="120" y="710" />
+              <mxPoint x="120" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-56" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="710" as="sourcePoint" />
+            <mxPoint x="640" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="710" />
+              <mxPoint x="600" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-57" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-34" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="710" as="sourcePoint" />
+            <mxPoint x="640" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="810" />
+              <mxPoint x="600" y="710" />
+              <mxPoint x="600" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-58" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-36" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="710" as="sourcePoint" />
+            <mxPoint x="640" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="910" />
+              <mxPoint x="600" y="710" />
+              <mxPoint x="600" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-59" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-38" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="710" as="sourcePoint" />
+            <mxPoint x="640" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="1015" />
+              <mxPoint x="600" y="710" />
+              <mxPoint x="600" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-60" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1120" y="710" as="sourcePoint" />
+            <mxPoint x="1120" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="710" />
+              <mxPoint x="1080" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-61" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0.002;exitY=0.16;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-43" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1120" y="710" as="sourcePoint" />
+            <mxPoint x="1120" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="823" />
+              <mxPoint x="1080" y="710" />
+              <mxPoint x="1080" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-62" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-45" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1120" y="710" as="sourcePoint" />
+            <mxPoint x="1120" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="930" />
+              <mxPoint x="1080" y="710" />
+              <mxPoint x="1080" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Wl4I8X28ZrfiVcVFsoqh-63" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="Wl4I8X28ZrfiVcVFsoqh-47" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="1120" y="710" as="sourcePoint" />
+            <mxPoint x="1120" y="520" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1080" y="1030" />
+              <mxPoint x="1080" y="710" />
+              <mxPoint x="1080" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-1" value="&lt;div&gt;Predmet&lt;/div&gt;&lt;div&gt;(Родительский класс для классов предметов в игре)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="1200" width="360" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-2" value="Предмет - класс, от которого наследуются предметы, которые можно использовать в игре." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FZu6h-9fB0mUG3u3Elis-1" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-3" value="use() - функция для использования предмета" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FZu6h-9fB0mUG3u3Elis-1" vertex="1">
+          <mxGeometry y="80" width="360" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-5" value="&lt;div&gt;Amulet&lt;/div&gt;&lt;div&gt;(Наследник класса Predmet)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="1330" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-6" value="Амулет - лечащий предмет. Увеличивает на 5 единиц здоровье персонажа, к которому применяется." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FZu6h-9fB0mUG3u3Elis-5" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-14" value="&lt;div&gt;Yad&lt;/div&gt;&lt;div&gt;(Наследник класса Predmet)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="1430" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-15" value="Яд - отравляющий предмет. Уменьшает на 4 единицы здоровье персонажа, к которому применяется." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FZu6h-9fB0mUG3u3Elis-14" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-16" value="&lt;div&gt;Eleksir&lt;/div&gt;&lt;div&gt;(Наследник класса Predmet)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="1530" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-17" value="Эликсир - воодушевляющий предмет. Увеличивает на 1 единицу урон персонажа, к которому применяется." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FZu6h-9fB0mUG3u3Elis-16" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-18" value="&lt;div&gt;Proklyatie&lt;/div&gt;&lt;div&gt;(Наследник класса Predmet)&lt;/div&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="640" y="1630" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-19" value="Проклятие - подавляющий предмет. Уменьшает на 1 единицу урон персонажа, к которому применяется." style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="FZu6h-9fB0mUG3u3Elis-18" vertex="1">
+          <mxGeometry y="40" width="360" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-21" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="FZu6h-9fB0mUG3u3Elis-5" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="1410" as="sourcePoint" />
+            <mxPoint x="640" y="1220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="1350" />
+              <mxPoint x="600" y="1220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-22" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="FZu6h-9fB0mUG3u3Elis-14" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="1350" as="sourcePoint" />
+            <mxPoint x="640" y="1220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="1450" />
+              <mxPoint x="600" y="1350" />
+              <mxPoint x="600" y="1220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-23" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="FZu6h-9fB0mUG3u3Elis-16" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="1450" as="sourcePoint" />
+            <mxPoint x="640" y="1220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="1550" />
+              <mxPoint x="600" y="1450" />
+              <mxPoint x="600" y="1350" />
+              <mxPoint x="600" y="1220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-24" value="" style="fontSize=12;html=1;endArrow=ERmandOne;startArrow=ERmandOne;rounded=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" parent="1" source="FZu6h-9fB0mUG3u3Elis-18" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="640" y="1550" as="sourcePoint" />
+            <mxPoint x="640" y="1220" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="600" y="1650" />
+              <mxPoint x="600" y="1550" />
+              <mxPoint x="600" y="1450" />
+              <mxPoint x="600" y="1350" />
+              <mxPoint x="600" y="1220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FZu6h-9fB0mUG3u3Elis-25" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Описание классов, присутствующик в игре в виде UML-диаграммы.&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Обельчак Вячеслав, 24.Б81-мм&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=default;rounded=1;" parent="1" vertex="1">
+          <mxGeometry x="505" y="30" width="630" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
