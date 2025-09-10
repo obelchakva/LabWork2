@@ -1,3 +1,6 @@
+/* Obel'chak Vyacheslav st129564@student.spbu.ru
+ * LabWork2 */
+
 #include "game.hpp"
 
 int main()
