@@ -1,3 +1,6 @@
+/* Obel'chak Vyacheslav st129564@student.spbu.ru
+ * LabWork2 */
+
 #ifndef GAME_HPP
 #define GAME_HPP
 
@@ -62,15 +65,7 @@ struct Berserk : public Voin
 	void attack(Person&a, Person&b);
 	void attack(Person&a, Person&b, Person&c);
 	
-    Berserk()
-    {
-        attack_distance = 1;
-        damage = 5;
-        health = 6;
-        distance = 1;
-        fraction = "Воин";
-        name = "Берсерк";
-    }
+    Berserk();
 };
 
 struct Paladin : public Voin
@@ -79,15 +74,7 @@ struct Paladin : public Voin
 	void attack(Person&a, Person&b);
 	void attack(Person&a, Person&b, Person&c);
 	
-    Paladin()
-    {
-        attack_distance = 1;
-        damage = 4;
-        health = 11;
-        distance = 1;
-        fraction = "Воин";
-        name = "Паладин";
-    }
+    Paladin();
 };
 
 struct Celitel : public Mag
@@ -98,15 +85,7 @@ struct Celitel : public Mag
 	
     int heal;
 
-    Celitel()
-    {
-        attack_distance = 2;
-        health = 10;
-        distance = 2;
-        fraction = "Маг";
-        heal = 2;
-        name = "Целитель";
-    }
+    Celitel();
 };
 
 struct Zaclinatel : public Mag
@@ -117,15 +96,7 @@ struct Zaclinatel : public Mag
     
     int damage;
 
-    Zaclinatel()
-    {
-        attack_distance = 2;
-        health = 10;
-        distance = 2;
-        fraction = "Маг";
-        damage = 1;
-        name = "Заклинатель";
-    }
+    Zaclinatel();
 };
 
 struct Arhimag:public Mag
@@ -136,15 +107,7 @@ struct Arhimag:public Mag
 	
 	int damage;
 
-	Arhimag()
-	{
-		attack_distance = 2;
-		damage = 3;
-		health = 10;
-		distance = 2;
-		fraction = "Маг";
-        name = "Архимаг";
-	}
+	Arhimag();
 };
 
 struct Illuzionist:public Mag
@@ -155,15 +118,7 @@ struct Illuzionist:public Mag
 	
 	int damage;
 	
-	Illuzionist()
-	{
-		attack_distance = 2;
-		damage = 3;
-		health = 10;
-		distance = 2;
-		fraction = "Иллюзионист";
-        name = "Иллюзионист";
-	}
+	Illuzionist();
 };
 
 struct Strelok:public Luchnik
@@ -172,15 +127,7 @@ struct Strelok:public Luchnik
 	void attack(Person&a);
 	void attack(Person &a, Person &b, Person &c);
 	
-	Strelok()
-	{
-		attack_distance = 2;
-		damage = 3;
-		health = 10;
-		distance = 2;
-		fraction = "Лучник";
-        name = "Стрелок";
-	}
+	Strelok();
 };
 
 struct Eger:public Luchnik
@@ -189,15 +136,7 @@ struct Eger:public Luchnik
 	void attack(Person&a, Person&b, Person&c);
 	void attack(Person &a);
 	
-	Eger()
-	{
-		attack_distance = 2;
-		damage = 3;
-		health = 10;
-		distance = 2;
-		fraction = "Лучник";
-        name = "Егерь";
-	}
+	Eger();
 };
 
 struct Antimag:public Luchnik
@@ -206,15 +145,7 @@ struct Antimag:public Luchnik
 	void attack(Person&a, Person&b, Person&c);
 	void attack(Person &a);
 	
-	Antimag()
-	{
-		attack_distance = 2;
-		damage = 3;
-		health = 10;
-		distance = 2;
-		fraction = "Антимаг";
-        name = "Антимаг";
-	}
+	Antimag();
 };
 
 struct Assasin:public Luchnik
@@ -223,15 +154,7 @@ struct Assasin:public Luchnik
 	void attack(Person&a, Person&b, Person&c);
 	void attack(Person &a);
 	
-	Assasin()
-	{
-		attack_distance = 2;
-		damage = 3;
-		health = 10;
-		distance = 2;
-		fraction = "Лучник";
-        name = "Ассасин";
-	}
+	Assasin();
 };
 
 struct Predmet
@@ -245,44 +168,28 @@ struct Amulet : public Predmet
 {
 	void use(Person &a) override;
 	
-	Amulet()
-	{
-		fraction = "Предмет";
-		name = "Амулет";
-	}
+	Amulet();
 };
 
 struct Yad : public Predmet
 {
 	void use(Person &a) override;
 	
-	Yad()
-	{
-		fraction = "Предмет";
-		name = "Яд";
-	}
+	Yad();
 };
 
 struct Eleksir : public Predmet
 {
 	void use(Person &a) override;
 	
-	Eleksir()
-	{
-		fraction = "Предмет";
-		name = "Эликсир";
-	}
+	Eleksir();
 };
 
 struct Proklyatie : public Predmet
 {
 	void use(Person &a) override;
 	
-	Proklyatie()
-	{
-		fraction = "Предмет";
-		name = "Проклятие";
-	}
+	Proklyatie();
 };
 
 #endif // GAME_HPP
