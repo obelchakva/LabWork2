@@ -8,12 +8,15 @@ The player is randomly given 6 cards:
 - 2 from class Voin (Pehota, Vor, Berserk or Paladin); 
 - 2 from class Luchnick (Strelok, Eger, Antimag or Assasin); 
 - 2 from class Mag (Celitel, Zaclinatel, Arhimag or Illuzionist); 
+
 There are 4 characters in each class. Almost all of them have unique abilities. You can find them in the class description table.
+
 He is also randomly given 2 of 4 items: 
 - amulet; 
 - poison; 
 - curse;
 - elixir; 
+
 You can also see the effect of the items in the table.
 Each item can be used to heal, strengthen, or suppress any of the cards only once.
 Next, a computer is put to play against the player, who will also have 6 playing cards, but no items.
