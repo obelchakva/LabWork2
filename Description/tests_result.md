@@ -1,5 +1,5 @@
 #Results of all tests
-'''
+```
 [==========] Running 46 tests from 1 test suite.
 [----------] Global test environment set-up.
 [----------] 46 tests from CharacterTest
@@ -137,4 +137,4 @@
 [----------] Global test environment tear-down
 [==========] 46 tests from 1 test suite ran. (0 ms total)
 [  PASSED  ] 46 tests.
-'''
+```
