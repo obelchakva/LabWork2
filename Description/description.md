@@ -18,6 +18,7 @@ He is also randomly given 2 of 4 items:
 - elixir; 
 
 You can also see the effect of the items in the table.
+
 Each item can be used to heal, strengthen, or suppress any of the cards only once.
 Next, a computer is put to play against the player, who will also have 6 playing cards, but no items.
 Gamer walks, chooses a card, which he will use in this turn and acts. 
